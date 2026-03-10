@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CodeBlue - Nearby Hospital</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    
+    <link rel="stylesheet" href="./libary/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/Styles home.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+    <div class="menu">
+        <input type="checkbox" id="check">
+
+        <div class="logo">
+            <a href="home.html">CODE</a>
+            <a style="color: #4ab5fd;" href="home.html">BLUE</a>
+        </div>
+
+        <ul>
+            <label class="btn cancel" for="check">
+                <i class="fa-solid fa-xmark"></i>
+            </label>
+
+            <li><a href="index.html">login</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="hospitals.html">Hospitals</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+
+        <label class="btn bars" for="check">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+</nav>
+
+
+<!-- Hero Section (Map) -->
+<section class="map-section position-relative">
+   <iframe
+        src="https://www.google.com/maps?q=hospital&output=embed"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy">
+    </iframe>
+    <div class="location-box">
+        <button class="btn btn-primary btn-lg">
+            <i class="fa-solid fa-location-dot"></i> Set My Location
+        </button>
+    </div>
+</section>
+
+<!-- Welcome Section -->
+<section class="text-center">
+    <h6 class="text-primary">WELCOME TO CODEBLUE</h6>
+    <h2 class="fw-bold">Find Available ICU Beds Near You Quickly and Easily</h2>
+    <a href="#" class="text-decoration-none">Learn More →</a>
+</section>
+
+<!-- Hospitals Section -->
+<section class="container pb-5">
+    <div class="row g-4">
+
+        <!-- Card -->
+        <div class="col-md-6">
+            <div class="card hospital-card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="./image/hosbital.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <span class="badge bg-success">Available Now</span>
+                            <h5 class="card-title mt-2">Metro General Hospital</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-location-dot"></i> Distance 5 km / 25 min
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bed text-primary"></i> 114
+                                &nbsp;
+                                <i class="fa-solid fa-bed text-danger"></i> 86
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+         <!-- Card -->
+        <div class="col-md-6">
+            <div class="card hospital-card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="./image/dream hospital.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <span class="badge bg-success">Available Now</span>
+                            <h5 class="card-title mt-2">Dream land Hospital</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-location-dot"></i> Distance 10 km / 50 h
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bed text-primary"></i> 23
+                                &nbsp;
+                                <i class="fa-solid fa-bed text-danger"></i> 177
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Duplicate and change status -->
+        <div class="col-md-6">
+            <div class="card hospital-card">
+                <div class="row g-0">
+                    <div class="col-4">
+                        <img src="./image/hospital.jpg" class="img-fluid rounded-start" alt="">
+                    </div>
+                    <div class="col-8">
+                        <div class="card-body">
+                            <span class="badge bg-danger">Fully Booked</span>
+                            <h5 class="card-title mt-2">Nile General Hospital</h5>
+                            <p class="card-text">
+                                <i class="fa-solid fa-location-dot"></i> Distance 8 km / 40 min
+                            </p>
+                            <p>
+                                <i class="fa-solid fa-bed text-primary"></i> 64
+                                &nbsp;
+                                <i class="fa-solid fa-bed text-danger"></i> 86
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    
+
+</section>
+ <!-- Bootstrap -->
+  <script src="./libary/bootstrap-5.3.8-dist/bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
